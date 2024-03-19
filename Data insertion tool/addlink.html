@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Insert data</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    input[type="submit"] {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Insert data</h2>
+    <form method="post" action="insert.php">
+      <label for="link">Link:</label>
+      <input type="text" id="link" name="link" placeholder="eg. https://example.com" required>
+      
+      <label for="visitcount">Visits:</label>
+      <input type="number" id="visitcount" name="visitcount" placeholder="It is recommended to set it to 0" required>
+      
+      <label for="waitingtime">Wait time:</label>
+      <input type="number" id="waitingtime" name="waitingtime" placeholder="If set to 5, it will jump to the specified link after 5 seconds." required>
+      
+      <label for="ad">Does it contain advertising:</label>
+      <input type="checkbox" id="ad" name="ad">
+      
+      <label for="adimg">Advertisement image link:</label>
+      <input type="text" id="adimg" name="adimg" placeholder="eg. https://example.com/image.png">
+      
+      <label for="adlink">Advertisement link:</label>
+      <input type="text" id="adlink" name="adlink" placeholder="eg. https://example.com">
+      
+      <input type="submit" value="提交">
+    </form>
+  </div>
+</body>
+</html>
