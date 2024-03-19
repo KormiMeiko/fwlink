@@ -1,12 +1,12 @@
 # fwlink
 *A simple URL jump program similar to Microsoft fwlink.*
 
-### Example usage
+## Example usage
 > http://example.com/fwlink.php?linkid=114514
 
 > http://example.com/fwlink.php?linkid=1919810
 
-### Deployment
+## Deployment
 **PHP recommended version: 7.4; MySQL version: 5.7**
 1. Create a database and execute the following SQL query:
 ```sql
@@ -36,7 +36,7 @@ CREATE TABLE fwlinks (
 |adlink   |Click the ad image to jump to the ad URL.   |
 
 
-### Data management
+## Data management
 - You can use the "Data insertion tool" in the warehouse to insert data. (Tip: If you want to add this tool to the site directory, please modify the names of the relevant directories and files, and configure Basic Auth for the tool's folder)；
 - You can also use phpMyAdmin for data management;
 - You can also write a management tool yourself :-).
