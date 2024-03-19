@@ -3,7 +3,7 @@
 
 ### Example usage
 > http://example.com/fwlink.php?linkid=114514
-> http://example.com/fwlink.php?linkid=1919810
+http://example.com/fwlink.php?linkid=1919810
 
 ### Deployment
 **PHP recommended version: 7.4; MySQL version: 5.7**
